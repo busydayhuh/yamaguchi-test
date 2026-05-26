@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/yamaguchi-test/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YAMAGUCHI Hair Styler</title>
+    <script type="module" crossorigin src="/yamaguchi-test/assets/index-DyGqhLA4.js"></script>
+    <link rel="stylesheet" crossorigin href="/yamaguchi-test/assets/index-D_wFb8my.css">
+  </head>
+
+  <body>
+    <div id="app">
+      <section class="styler" aria-label="YAMAGUCHI Hair Styler">
+        <nav class="styler__wheel wheel" aria-label="Навигация">
+          <img
+            class="wheel__ring"
+            src="data:image/svg+xml,%3csvg%20width='717'%20height='717'%20viewBox='0%200%20717%20717'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_i_32073_127)'%3e%3ccircle%20cx='358.485'%20cy='358.485'%20r='353'%20stroke='%23625B56'%20stroke-width='10.97'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_i_32073_127'%20x='0'%20y='0'%20width='720.77'%20height='720.77'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset%20dx='5'%20dy='7'/%3e%3cfeGaussianBlur%20stdDeviation='1.9'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='arithmetic'%20k2='-1'%20k3='1'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.26%200'/%3e%3cfeBlend%20mode='normal'%20in2='shape'%20result='effect1_innerShadow_32073_127'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <button
+            class="wheel__item wheel__item--active"
+            type="button"
+            data-slide-to="0"
+            aria-current="true"
+            aria-label="Фен-стайлер 2 в 1"
+          >
+            <svg class="wheel__icon" aria-hidden="true">
+              <use href="#icon-slide_1_icon"></use>
+            </svg>
+            <span class="wheel__label"
+              >Фен-стайлер<br />
+              2 в 1</span
+            >
+          </button>
+
+          <button
+            class="wheel__item"
+            type="button"
+            data-slide-to="1"
+            aria-label="Суперлёгкий"
+          >
+            <svg class="wheel__icon" aria-hidden="true">
+              <use href="#icon-slide_2_icon"></use>
+            </svg>
+            <span class="wheel__label">Суперлёгкий</span>
+          </button>
+
+          <button
+            class="wheel__item"
+            type="button"
+            data-slide-to="2"
+            aria-label="Инновационный японский мотор"
+          >
+            <svg class="wheel__icon" aria-hidden="true">
+              <use href="#icon-slide_3_icon"></use>
+            </svg>
+            <span class="wheel__label"
+              >Инновационный<br />
+              японский мотор</span
+            >
+          </button>
+        </nav>
+
+        <div class="styler__slides">
+          <article class="slide slide--intro slide--active">
+            <div class="slide__backdrop">
+              <picture>
+                <source
+                  media="(min-width: 400px)"
+                  srcset="/yamaguchi-test/assets/backdrop_1-sXBTiCt8.webp"
+                />
+                <img
+                  class="slide__backdrop-image"
+                  src="/yamaguchi-test/assets/slide_1_main_mob-DKQTf5W5.webp"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="slide__center-image">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/yamaguchi-test/assets/slide_1_main_desk-DF6j65j1.webp"
+                />
+                <img src="/yamaguchi-test/assets/slide_1_main_tablet-Dyddfut8.webp" alt="" />
+              </picture>
+            </div>
+
+            <div class="slide__content">
+              <h2 class="slide__title">
+                ФЕН и СТАЙЛЕР<br />в уникальном дизайне
+              </h2>
+
+              <p class="chip chip--medium">2 в 1</p>
+
+              <div class="slide__product-list">
+                <div class="slide__product">
+                  <p class="chip chip--small chip--dark">Фен</p>
+                  <img
+                    class="slide__product-image"
+                    src="/yamaguchi-test/assets/slide_1_dryer-DS7m-V0_.webp"
+                    alt="Фен"
+                  />
+                </div>
+
+                <div class="slide__product">
+                  <p class="chip chip--small">Стайлер</p>
+                  <img
+                    class="slide__product-image"
+                    src="/yamaguchi-test/assets/slide_1_styler-DFxVSFRO.webp"
+                    alt="Стайлер"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide slide--weight" aria-hidden="true">
+            <div class="slide__backdrop">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/yamaguchi-test/assets/slide_2_main_desk-YHNatbrO.webp"
+                />
+                <img src="/yamaguchi-test/assets/slide_2_main_mob-C0yHmZ-d.webp" alt="" />
+              </picture>
+            </div>
+
+            <img
+              class="slide__star"
+              src="/yamaguchi-test/assets/slide_2_star-DQUpf_ny.svg"
+              alt=""
+            />
+
+            <div class="slide__content">
+              <div class="chip chip--large">
+                <div class="chip__icon">
+                  <svg>
+                    <use href="#icon-slide_2_icon"></use>
+                  </svg>
+                </div>
+                <p class="chip__text">
+                  Лёгкость<br />
+                  и комфорт<br />
+                  в руке
+                </p>
+              </div>
+
+              <h2 class="slide__title">
+                СУПЕР<span class="u-tablet-up">-</span>ЛЁГКИЙ
+              </h2>
+
+              <p class="chip chip--medium">500 г</p>
+
+              <p class="slide__text">
+                Уменьшает усталость рук<br />при сушке волос, делая процедуру
+                удобной и приятной даже после напряжённого рабочего дня.
+              </p>
+            </div>
+          </article>
+
+          <article class="slide slide--motor" aria-hidden="true">
+            <div class="slide__backdrop">
+              <img src="/yamaguchi-test/assets/backdrop_3-2UCD5RBo.webp" alt="" />
+            </div>
+
+            <img
+              class="slide__star"
+              src="/yamaguchi-test/assets/slide_3_star-D27NKZav.svg"
+              alt=""
+            />
+
+            <div class="slide__content">
+              <div class="chip chip--large">
+                <div class="chip__icon">
+                  <svg>
+                    <use href="#icon-slide_3_icon"></use>
+                  </svg>
+                </div>
+                <p class="chip__text">
+                  Инновационный<br />
+                  японский мотор
+                </p>
+              </div>
+
+              <h2 class="slide__title">
+                <span class="slide__title-part slide__title-part--md">
+                  Для ценителей
+                </span>
+                <span class="slide__title-part slide__title-part--lg">
+                  комфорта<br />и качества
+                </span>
+                <span class="slide__title-part slide__title-part--sm">
+                  в уходе за&nbsp;волосами
+                </span>
+              </h2>
+
+              <p class="slide__desktop-note">Бесщеточный мотор BLDC</p>
+
+              <div class="slide__motor-card motor-card">
+                <picture>
+                  <source
+                    media="(min-width: 400px)"
+                    srcset="/yamaguchi-test/assets/backdrop_3-2UCD5RBo.webp"
+                  />
+                  <img
+                    class="motor-card__image"
+                    src="/yamaguchi-test/assets/backdrop_3_mobile-BYpzU8uO.webp"
+                    alt=""
+                  />
+                </picture>
+
+                <p class="motor-card__text">Бесщеточный<br />мотор BLDC</p>
+
+                <img
+                  class="motor-card__star"
+                  src="/yamaguchi-test/assets/slide_3_star-D27NKZav.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+  </body>
+</html>
