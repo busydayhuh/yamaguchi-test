@@ -4,7 +4,7 @@ import "./style.css";
 
 gsap.registerPlugin(Observer);
 
-fetch("/svg-sprite.svg")
+fetch(`${import.meta.env.BASE_URL}svg-sprite.svg`)
   .then((res) => res.text())
   .then((svg) => {
     document.body.insertAdjacentHTML("afterbegin", svg);
