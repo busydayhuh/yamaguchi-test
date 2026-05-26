@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YAMAGUCHI Hair Styler</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <section class="styler" aria-label="YAMAGUCHI Hair Styler">
+        <nav class="styler__wheel wheel" aria-label="Навигация">
+          <img
+            class="wheel__ring"
+            src="./src/assets/wheel.svg"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <button
+            class="wheel__item wheel__item--active"
+            type="button"
+            data-slide-to="0"
+            aria-current="true"
+            aria-label="Фен-стайлер 2 в 1"
+          >
+            <svg class="wheel__icon" aria-hidden="true">
+              <use href="#icon-slide_1_icon"></use>
+            </svg>
+            <span class="wheel__label"
+              >Фен-стайлер<br />
+              2 в 1</span
+            >
+          </button>
+
+          <button
+            class="wheel__item"
+            type="button"
+            data-slide-to="1"
+            aria-label="Суперлёгкий"
+          >
+            <svg class="wheel__icon" aria-hidden="true">
+              <use href="#icon-slide_2_icon"></use>
+            </svg>
+            <span class="wheel__label">Суперлёгкий</span>
+          </button>
+
+          <button
+            class="wheel__item"
+            type="button"
+            data-slide-to="2"
+            aria-label="Инновационный японский мотор"
+          >
+            <svg class="wheel__icon" aria-hidden="true">
+              <use href="#icon-slide_3_icon"></use>
+            </svg>
+            <span class="wheel__label"
+              >Инновационный<br />
+              японский мотор</span
+            >
+          </button>
+        </nav>
+
+        <div class="styler__slides">
+          <article class="slide slide--intro slide--active">
+            <div class="slide__backdrop">
+              <picture>
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/assets/backdrop_1.webp"
+                />
+                <img
+                  class="slide__backdrop-image"
+                  src="./src/assets/slide_1_main_mob.webp"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="slide__center-image">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./src/assets/slide_1_main_desk.webp"
+                />
+                <img src="./src/assets/slide_1_main_tablet.webp" alt="" />
+              </picture>
+            </div>
+
+            <div class="slide__content">
+              <h2 class="slide__title">
+                ФЕН и СТАЙЛЕР<br />в уникальном дизайне
+              </h2>
+
+              <p class="chip chip--medium">2 в 1</p>
+
+              <div class="slide__product-list">
+                <div class="slide__product">
+                  <p class="chip chip--small chip--dark">Фен</p>
+                  <img
+                    class="slide__product-image"
+                    src="./src/assets/slide_1_dryer.webp"
+                    alt="Фен"
+                  />
+                </div>
+
+                <div class="slide__product">
+                  <p class="chip chip--small">Стайлер</p>
+                  <img
+                    class="slide__product-image"
+                    src="./src/assets/slide_1_styler.webp"
+                    alt="Стайлер"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide slide--weight" aria-hidden="true">
+            <div class="slide__backdrop">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./src/assets/slide_2_main_desk.webp"
+                />
+                <img src="./src/assets/slide_2_main_mob.webp" alt="" />
+              </picture>
+            </div>
+
+            <img
+              class="slide__star"
+              src="./src/assets/slide_2_star.svg"
+              alt=""
+            />
+
+            <div class="slide__content">
+              <div class="chip chip--large">
+                <div class="chip__icon">
+                  <svg>
+                    <use href="#icon-slide_2_icon"></use>
+                  </svg>
+                </div>
+                <p class="chip__text">
+                  Лёгкость<br />
+                  и комфорт<br />
+                  в руке
+                </p>
+              </div>
+
+              <h2 class="slide__title">
+                СУПЕР<span class="u-tablet-up">-</span>ЛЁГКИЙ
+              </h2>
+
+              <p class="chip chip--medium">500 г</p>
+
+              <p class="slide__text">
+                Уменьшает усталость рук<br />при сушке волос, делая процедуру
+                удобной и приятной даже после напряжённого рабочего дня.
+              </p>
+            </div>
+          </article>
+
+          <article class="slide slide--motor" aria-hidden="true">
+            <div class="slide__backdrop">
+              <img src="./src/assets/backdrop_3.webp" alt="" />
+            </div>
+
+            <img
+              class="slide__star"
+              src="./src/assets/slide_3_star.svg"
+              alt=""
+            />
+
+            <div class="slide__content">
+              <div class="chip chip--large">
+                <div class="chip__icon">
+                  <svg>
+                    <use href="#icon-slide_3_icon"></use>
+                  </svg>
+                </div>
+                <p class="chip__text">
+                  Инновационный<br />
+                  японский мотор
+                </p>
+              </div>
+
+              <h2 class="slide__title">
+                <span class="slide__title-part slide__title-part--md">
+                  Для ценителей
+                </span>
+                <span class="slide__title-part slide__title-part--lg">
+                  комфорта<br />и качества
+                </span>
+                <span class="slide__title-part slide__title-part--sm">
+                  в уходе за&nbsp;волосами
+                </span>
+              </h2>
+
+              <p class="slide__desktop-note">Бесщеточный мотор BLDC</p>
+
+              <div class="slide__motor-card motor-card">
+                <picture>
+                  <source
+                    media="(min-width: 400px)"
+                    srcset="./src/assets/backdrop_3.webp"
+                  />
+                  <img
+                    class="motor-card__image"
+                    src="./src/assets/backdrop_3_mobile.webp"
+                    alt=""
+                  />
+                </picture>
+
+                <p class="motor-card__text">Бесщеточный<br />мотор BLDC</p>
+
+                <img
+                  class="motor-card__star"
+                  src="./src/assets/slide_3_star.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
